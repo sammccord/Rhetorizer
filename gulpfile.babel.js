@@ -152,7 +152,7 @@ gulp.task('sync', ['serve'], cb => {
 gulp.task('deploy', cb => {
   const push = require('git-push');
   const remote = argv.production ?
-    'https://github.com/sammccord/Rhetorizer.git' :
+    'https://git.heroku.com/rhetorizer.git' :
     'https://github.com/sammccord/Rhetorizer.git';
   push('./build', remote, cb);
 });
